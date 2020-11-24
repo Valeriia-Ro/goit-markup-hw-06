@@ -781,7 +781,8 @@ body {
     margin-top: 4px;
     padding-left: 42px;
     outline: none;
-    
+    transition: fill var(--animation), border-color var(--animation);
+
 }
 .modal-label {
     display: block;
@@ -816,6 +817,7 @@ body {
 
 .modal-input:focus + .form-icon-svg {
     fill: var(--highlight-color);  
+
 }
 
 .modal-title {
@@ -830,8 +832,9 @@ body {
     margin-bottom: 12px;
     margin-top: 0;
 }
+
 .name-input{
-    display: inline-block;
+    display: block;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -842,7 +845,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 
 .comment::placeholder {
     font-family: Roboto;
@@ -859,6 +861,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    position: absolute;
 }
 .icon-checkbox {
     display: inline-block;
@@ -866,11 +869,21 @@ body {
     height: 15px;
     border: 2px solid black;
     border-radius: 4px;
+    margin-right: 8px;
+}
+
+.checkbox:checked + .icon-checkbox {
+    background-color: var(--highlight-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--highlight-color);
+    transition: background-color var(--animation), background-image var(--animation);
 }
 
 .checkbox-label {
     padding: 0;
-    display: inline-block;
+    display: flex;
     margin-left: 11px;
     margin-right: 11px;
     margin-top: 0;
@@ -882,6 +895,14 @@ body {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.document {
+    color: var(--highlight-color);
+    margin-left: 4px;
 }
 
 .form-btn {
