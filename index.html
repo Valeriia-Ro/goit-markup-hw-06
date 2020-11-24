@@ -323,13 +323,88 @@
                     </ul>
 
                 </div>
+                <div class="subscribe">
+                    <h2 class="join">Подпишитесь на рассылку</h2>
+                    <form>
+                        <div class="subscribe-items">
+                            <input type="email" class="mail-input" name="email" id="email">
+                            <label for="email" class="mail-label">E-mail</label>
+
+                            <button type="submit" class="subscribe-btn"><span class="subscribe-word">Подписаться</span>
+                                <svg class="subscribe-svg">
+                                    <use href="../images/sprite-two.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>    
+                    </form>
+                </div>
+
             </div>
         </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
                             
-        <div class="modal"> 
-            <button data-modal-close class="close-btn"></button>
+        <div class="modal">
+            
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            
+            <form class="form">
+
+                <div class="form-field">
+                    <label class="modal-label" for="name">
+                        <span class="name-input">Имя</span>
+                        <input class="modal-input" type="text" name="name" id="name" >
+                        <svg class="form-icon-svg">
+                            <use href="./images/sprite-two.svg#person"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label class="modal-label">
+                        <span class="name-input">Телефон</span>
+                         <input class="modal-input" type="tel" name="tel">
+                         <svg class="form-icon-svg">
+                            <use href="./images/sprite-two.svg#tel"></use>
+                        </svg>
+                    </label>
+                </div>
+
+                <div class="form-field">
+                    <label class="modal-label" >
+                        <span class="name-input">Почта</span>
+                       
+                        <input class="modal-input" type="email" name="email">
+                        <svg class="form-icon-svg">
+                            <use href="./images/sprite-two.svg#letter"></use>
+                        </svg>
+                        
+                    </label>
+                </div>
+                
+                <div class="form-field">
+                    <label class="modal-label">
+                        <span class="name-input">Комментарий</span>
+                        <textarea class="modal-input comment" name="comment" placeholder="Введите текст" cols="30" rows="7"></textarea>
+                    </label>
+                </div>
+                <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" name="checkbox" value="accept">
+                    <span class="icon-checkbox"></span>
+                    Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+                
+                <button class="form-btn" type="submit">Отправить
+
+                </button>
+            </form>
+
+            <button data-modal-close class="close-btn">
+                <svg class="close-btn-svg" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.108L9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108z"/>
+                </svg>
+            </button>
+
          </div>
         
     </div>
