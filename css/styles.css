@@ -802,11 +802,9 @@ body {
 
 .form-icon-svg {
     position: absolute;
-    top: 62%;
-    left: 12px;
-    transform: translateY(-62%);
-    width: 18px;
-    height: 18px;
+    top: 57%;
+    left: 15px;
+    transform: translateY(-57%);
     background-size: contain; 
     fill: black;   
 }
@@ -868,7 +866,7 @@ body {
     width: 16px;
     height: 15px;
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-right: 8px;
 }
 
@@ -921,13 +919,14 @@ body {
     color: var(--white-color);
     display: block;
     margin: auto;
+    cursor: pointer;
     
 }
 
 .close-btn-svg {
     background-size: contain; 
     fill: #2f2f2f;
-
+    
 }
 
 .close-btn {
@@ -942,11 +941,9 @@ body {
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff; 
+    cursor: pointer;
 }
 
-.close-btn-svg {
-    fill: black;
-}
 
 .close-btn:hover .close-btn-svg {
     fill: var(--highlight-color);
@@ -958,12 +955,17 @@ body {
     position: relative;
 }
 
-.mail-label {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(50%);
+.mail-input:placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+   
+    align-items: center;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 .mail-input {
@@ -978,6 +980,7 @@ body {
     border-radius: 4px;
     color: var(--white-color);
     background: transparent;
+    padding-left: 16px;
 }
 
 .subscribe-items {
@@ -997,7 +1000,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-style: none;
     border-radius: 4px; 
-    
+    cursor: pointer;
 }
 
 .subscribe-word {
