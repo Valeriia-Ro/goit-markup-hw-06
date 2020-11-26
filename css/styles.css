@@ -744,7 +744,7 @@ body {
 .footer-icon-link:focus {
     background: var(--highlight-color);
 }
-
+/* modalka */
 .backdrop {
     position: fixed;
     top: 0;
@@ -786,6 +786,7 @@ body {
 }
 .modal-label {
     display: block;
+    position: relative;
     margin: 0;
     padding: 0;
 }
